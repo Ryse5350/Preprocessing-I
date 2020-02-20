@@ -139,6 +139,11 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    width: 90%;
+  }
+}
 body header .nav-container {
   display: flex;
   justify-content: flex-end;
@@ -148,6 +153,11 @@ body header .nav-container nav {
   display: flex;
   justify-content: space-between;
   width: 40%;
+}
+@media (max-width: 500px) {
+  body header .nav-container nav {
+    width: 100%;
+  }
 }
 body header .nav-container nav a {
   text-decoration: none;
@@ -167,6 +177,7 @@ body .top h1 {
 }
 body .top h3 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 body .top hr {
   border-top: 1px solid black;
@@ -185,8 +196,19 @@ body .middle {
   justify-content: space-between;
   margin-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  body .middle {
+    flex-direction: column;
+  }
+}
 body .middle section.listen {
   width: 55%;
+}
+@media (max-width: 500px) {
+  body .middle section.listen {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 }
 body .middle section.listen h2 {
   font-size: 2.5rem;
@@ -197,6 +219,11 @@ body .middle section.listen p {
 }
 body .middle .stuff {
   width: 40%;
+}
+@media (max-width: 500px) {
+  body .middle .stuff {
+    width: 100%;
+  }
 }
 body .middle .stuff h3 {
   font-size: 2rem;
@@ -222,6 +249,11 @@ body .bottom .grid-container {
   grid-template-columns: 15% auto auto 25%;
   grid-template-rows: auto;
   row-gap: 2rem;
+}
+@media (max-width: 500px) {
+  body .bottom .grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 body .bottom .grid-container h4 {
   font-size: 1.9rem;
