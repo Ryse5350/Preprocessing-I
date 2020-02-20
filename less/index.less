@@ -58,6 +58,13 @@ html{
 	font-size: 62.5%;
 }
 
+.flex(){
+	display: flex;
+}
+.mobileGrid(){
+	grid-template-columns: auto auto auto auto;
+}
+
 body {
 	font-size: 1.6rem;
 	width: 80%;
@@ -69,12 +76,12 @@ body {
 	header {
 
 		.nav-container {
-			display: flex;
+			.flex();
 			justify-content: flex-end;
 			margin: 2rem 0;
 
 			nav {
-				display: flex;
+				.flex();
 				justify-content: space-between;
 				width: 40%;
 				@media(max-width:500px){
@@ -127,7 +134,7 @@ body {
 	} // .top close
 
 	.middle {
-		display: flex;
+		.flex();
 		justify-content: space-between;
 		margin-bottom: 3rem;
 		@media(max-width:500px){
@@ -167,7 +174,7 @@ body {
 				border-radius: 5px;
 				padding: 1rem;
 				padding-bottom: 0;
-				display: flex;
+				.flex();
 				flex-direction: column;
 				justify-content: space-evenly;
 
@@ -191,7 +198,7 @@ body {
 			grid-template-rows: auto;
 			row-gap: 2rem;
 			@media(max-width:500px){
-				grid-template-columns: auto auto auto auto;
+				.mobileGrid();
 			}
 
 			h4 {
